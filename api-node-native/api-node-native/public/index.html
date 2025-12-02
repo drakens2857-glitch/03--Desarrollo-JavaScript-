@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Probar API REST Node.js Nativo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>API REST Node.js</h1>
+
+  <div class="container">
+    <button onclick="getUsers()">GET /api/usuarios</button>
+    <button onclick="createUser()">POST /api/usuarios</button>
+
+    <h3>Respuesta:</h3>
+    <pre id="output">Aquí aparecerá la respuesta...</pre>
+  </div>
+
+  <script>
+    async function getUsers() {
+      const res = await fetch('/api/usuarios');
+      const data = await res.json();
+      document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+    }
+
+    async function createUser() {
+      const body = {
+        nombre: "Usuario HTML",
+        email: "html@example.com",
+        edad: 22
+      };
+      const res = await fetch('/api/usuarios', {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body)
+      });
+      const data = await res.json();
+      document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana García",
+    "email": "ana@example.com",
+    "edad": 28,
+    "activo": true,
+    "fechaCreacion": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos López",
+    "email": "carlos@example.com",
+    "edad": 35,
+    "activo": true,
+    "fechaCreacion": "2024-01-02T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "nombre": "Usuario HTML",
+    "email": "html@example.com",
+    "edad": 22,
+    "activo": true,
+    "fechaCreacion": "2025-12-02T15:47:37.500Z"
+  }
+]

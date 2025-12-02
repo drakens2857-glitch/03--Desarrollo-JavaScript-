@@ -1,0 +1,19 @@
+{
+  "name": "api-node-native",
+  "version": "1.0.0",
+  "description": "API REST con Node.js nativo (CRUD) - entregado por ChatGPT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "native",
+    "rest",
+    "crud"
+  ],
+  "author": "ChatGPT",
+  "license": "MIT"
+}
